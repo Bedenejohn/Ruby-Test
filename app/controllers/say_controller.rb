@@ -3,6 +3,10 @@ class SayController < ApplicationController
   	@time = Time.now
   end
 
+  def filenames
+  	@files = Dir.glob('*')
+  end
+
   def goodbye
   end
 end

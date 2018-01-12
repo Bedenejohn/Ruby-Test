@@ -8,7 +8,7 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-
+  config.web_console.whitelisted_ips = %w( 0.0.0.0/0 ::/0 )
   # Show full error reports.
   config.consider_all_requests_local = true
 
