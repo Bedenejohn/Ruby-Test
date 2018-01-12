@@ -54,3 +54,9 @@ gem "bootstrap-sass", "~> 3.3"
 
 # Added at 2018-01-12 18:04:33 -0500 by desktop-d2r5g0t\john:
 gem "jquery-rails", "~> 4.3"
+
+# Added at 2018-01-12 18:09:53 -0500 by desktop-d2r5g0t\john:
+gem "webpacker", "~> 3.2"
+
+# Added at 2018-01-12 18:11:12 -0500 by desktop-d2r5g0t\john:
+gem "webpacker-react", "~> 0.3.2"
