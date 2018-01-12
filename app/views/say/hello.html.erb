@@ -1,12 +1,22 @@
-<h1>Hello from John Bedene</h1>
-<p>
-	It is now <%= @time %>
-</p>
-<p>
-	You can find filenames
-	<%= link_to "Here", say_filenames_path %>.
-</p>
-<p>
-	Time to say
-	<%= link_to "Goodbye", say_goodbye_path %>!
-</p>
+<% provide(:title, "Hello World from Zhiguang Xu") %>
+
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            It is now <%=@time%>
+        </h3>
+    </div>
+
+    <div class="panel-body">
+        <p>
+            List of 
+            <%=link_to "File Names", say_filenames_path %>!
+        </p>
+        <p>
+            Time to say 
+            <%=link_to "Goodbye", say_goodbye_path %>!
+        </p>
+    </div>
+
+</div>

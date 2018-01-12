@@ -1,7 +1,21 @@
-<h1>Goodbye</h1>
-<p>
-	It was nice having you here
-</p>
-<p>
-	Say <%= link_to "Hello", say_hello_path %> again
-</p>
+<% provide(:title, "Hello World from Zhiguang Xu") %>
+
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            It is now <%=@time%>
+        </h3>
+    </div>
+
+    <div class="panel-body">
+    	<h1>Goodbye</h1>
+        <p>
+			It was nice having you here
+		</p>
+		<p>
+			Say <%= link_to "Hello", say_hello_path %> again
+		</p>
+    </div>
+</div>
+

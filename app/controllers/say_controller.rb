@@ -1,12 +1,19 @@
 class SayController < ApplicationController
-  def hello
-  	@time = Time.now
-  end
+    before_action :time_now
 
-  def filenames
-  	@files = Dir.glob('*')
-  end
+    def hello
+    end
 
-  def goodbye
-  end
+    def goodbye
+    end
+
+    def filenames
+        @files = Dir.glob('*')
+    end
+
+    private
+
+    def time_now
+        @time = Time.now
+    end
 end

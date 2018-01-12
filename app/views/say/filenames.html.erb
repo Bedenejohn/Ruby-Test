@@ -1,13 +1,27 @@
-<h1>Filenames</h1>
-<p>
-	<% @files.each do |file| %>
-		<ul>
-				file name is: <%= file %>
-		</ul>
-	<% end %>
-</p>
+<% provide(:title, "Hello World from Zhiguang Xu") %>
 
-<p>
-	You can go back to
-	<%= link_to "Hello", say_hello_path %>.
-</p>
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            It is now <%=@time%>
+        </h3>
+    </div>
+
+    <div class="panel-body">
+    	<h1>Filenames</h1>
+       	<p>
+			<% @files.each do |file| %>
+				<ul>
+					file name is: <%= file %>
+				</ul>
+			<% end %>
+		</p>
+
+		<p>
+			You can go back to
+			<%= link_to "Hello", say_hello_path %>.
+		</p>
+    </div>
+
+</div>
