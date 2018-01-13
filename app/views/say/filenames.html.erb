@@ -10,9 +10,7 @@
     	<h1>Filenames</h1>
        	<p>
 			<% @files.each do |file| %>
-				<ul>
-					file name is: <%= file %>
-				</ul>
+				<%= react_component('FileApp', files: @files) %>
 			<% end %>
 		</p>
 
