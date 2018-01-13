@@ -9,9 +9,7 @@
     <div class="panel-body">
     	<h1>Filenames</h1>
        	<p>
-			<% @files.each do |file| %>
-				<%= react_component('FileApp', files: @files) %>
-			<% end %>
+			<%= react_component('FileApp', files: @files) %>
 		</p>
 
 		<p>
